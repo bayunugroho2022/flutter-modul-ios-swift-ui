@@ -14,6 +14,8 @@
 		4C27B2662D8D644A00AD7753 /* flutter_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C27B2652D8D644A00AD7753 /* flutter_iosTests.swift */; };
 		4C27B2702D8D644A00AD7753 /* flutter_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C27B26F2D8D644A00AD7753 /* flutter_iosUITests.swift */; };
 		4C27B2722D8D644A00AD7753 /* flutter_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C27B2712D8D644A00AD7753 /* flutter_iosUITestsLaunchTests.swift */; };
+		4C531B112D914A3F0018D7F1 /* FlutterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C531B102D914A3F0018D7F1 /* FlutterManager.swift */; };
+		4C531B132D914D4E0018D7F1 /* FlutterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C531B122D914D4E0018D7F1 /* FlutterView.swift */; };
 		4CCBD2D92D8D67740072B072 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27B2802D8D661100AD7753 /* App.xcframework */; };
 		4CCBD2DA2D8D67740072B072 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27B2802D8D661100AD7753 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4CCBD2DC2D8D67760072B072 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27B27F2D8D661100AD7753 /* Flutter.xcframework */; };
@@ -66,6 +68,8 @@
 		4C27B2712D8D644A00AD7753 /* flutter_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flutter_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4C27B27F2D8D661100AD7753 /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "Flutter/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 		4C27B2802D8D661100AD7753 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "Flutter/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
+		4C531B102D914A3F0018D7F1 /* FlutterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterManager.swift; sourceTree = "<group>"; };
+		4C531B122D914D4E0018D7F1 /* FlutterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlutterView.swift; sourceTree = "<group>"; };
 		4C69763B2D8D73E000498450 /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -126,6 +130,8 @@
 				4C27B2562D8D644800AD7753 /* ContentView.swift */,
 				4C27B2582D8D644A00AD7753 /* Assets.xcassets */,
 				4C27B25A2D8D644A00AD7753 /* Preview Content */,
+				4C531B102D914A3F0018D7F1 /* FlutterManager.swift */,
+				4C531B122D914D4E0018D7F1 /* FlutterView.swift */,
 			);
 			path = "flutter-ios";
 			sourceTree = "<group>";
@@ -296,6 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C27B2572D8D644800AD7753 /* ContentView.swift in Sources */,
+				4C531B132D914D4E0018D7F1 /* FlutterView.swift in Sources */,
+				4C531B112D914A3F0018D7F1 /* FlutterManager.swift in Sources */,
 				4C27B2552D8D644800AD7753 /* flutter_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

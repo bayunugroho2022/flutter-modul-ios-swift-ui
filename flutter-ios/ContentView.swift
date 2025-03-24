@@ -9,69 +9,58 @@ import SwiftUI
 import Flutter
 
 struct ContentView: View {
-    // Flutter dependencies are passed in an EnvironmentObject.
-    @EnvironmentObject var flutterDependencies: FlutterDependencies
+    @StateObject private var flutterManager = FlutterManager()
+    @State private var isFlutterViewPresented = false
 
-    @State var counter = 0
-    
     var body: some View {
         VStack {
-            Text("Counter: \(counter)").font(.largeTitle)
-            Button(action: {
+            Text("Counter: \(flutterManager.counter)").font(.largeTitle)
+
+            Button("Increase counter") {
                 increaseCounter()
-            }) {
-                Text("Increase counter")
-                    .font(.headline)
-                    .padding()
-                    .background(Color.yellow)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }.padding(.vertical, 8)
-            
-            Button(action: {
+            }
+            .buttonStyle(CustomButtonStyle(color: .yellow))
+
+            Button("Open Flutter View") {
                 showFlutter()
-            }) {
-                Text("Open Flutter View")
-                    .font(.headline)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }.padding(.vertical, 10)
+            }
+            .buttonStyle(CustomButtonStyle(color: .blue))
         }
-        
+        .fullScreenCover(isPresented: $isFlutterViewPresented, onDismiss: {
+            flutterManager.stopEngine()
+        }) {
+            FlutterView(flutterManager: flutterManager)
+        }
     }
-    
-    func increaseCounter() {
-        self.counter+=1
+
+    private func increaseCounter() {
+        flutterManager.counter += 1
+        flutterManager.submitCounter()
     }
-    
-    func showFlutter() {
-        guard
-          let windowScene = UIApplication.shared.connectedScenes
-            .first(where: { $0.activationState == .foregroundActive && $0 is UIWindowScene }) as? UIWindowScene,
-          let window = windowScene.windows.first(where: \.isKeyWindow),
-          let rootViewController = window.rootViewController
-        else { return }
 
-        // Create a FlutterViewController from pre-warm FlutterEngine
-        let flutterViewController = FlutterViewController(
-          engine: flutterDependencies.flutterEngine,
-          nibName: nil,
-          bundle: nil)
-        flutterViewController.modalPresentationStyle = .overCurrentContext
-        flutterViewController.isViewOpaque = false
+    private func showFlutter() {
+        flutterManager.startEngine()
+        isFlutterViewPresented = true
+    }
+}
 
-        rootViewController.present(flutterViewController, animated: true)
-      }
+
+struct CustomButtonStyle: ButtonStyle {
+    var color: Color
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.headline)
+            .padding()
+            .background(color)
+            .foregroundColor(.white)
+            .cornerRadius(10)
+            .opacity(configuration.isPressed ? 0.8 : 1.0)
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
-
-#Preview {
-    ContentView()
 }
