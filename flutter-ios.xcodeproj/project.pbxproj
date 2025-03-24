@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		4C27B2662D8D644A00AD7753 /* flutter_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C27B2652D8D644A00AD7753 /* flutter_iosTests.swift */; };
 		4C27B2702D8D644A00AD7753 /* flutter_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C27B26F2D8D644A00AD7753 /* flutter_iosUITests.swift */; };
 		4C27B2722D8D644A00AD7753 /* flutter_iosUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C27B2712D8D644A00AD7753 /* flutter_iosUITestsLaunchTests.swift */; };
+		4CCBD2D92D8D67740072B072 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27B2802D8D661100AD7753 /* App.xcframework */; };
+		4CCBD2DA2D8D67740072B072 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27B2802D8D661100AD7753 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4CCBD2DC2D8D67760072B072 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27B27F2D8D661100AD7753 /* Flutter.xcframework */; };
+		4CCBD2DD2D8D67760072B072 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C27B27F2D8D661100AD7753 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +37,23 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4CCBD2DB2D8D67740072B072 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4CCBD2DD2D8D67760072B072 /* Flutter.xcframework in Embed Frameworks */,
+				4CCBD2DA2D8D67740072B072 /* App.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		4C09AB042D8D75DA008B73E3 /* Info-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Release.plist"; sourceTree = "<group>"; };
 		4C27B2512D8D644800AD7753 /* flutter-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "flutter-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C27B2542D8D644800AD7753 /* flutter_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flutter_iosApp.swift; sourceTree = "<group>"; };
 		4C27B2562D8D644800AD7753 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +64,9 @@
 		4C27B26B2D8D644A00AD7753 /* flutter-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "flutter-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C27B26F2D8D644A00AD7753 /* flutter_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flutter_iosUITests.swift; sourceTree = "<group>"; };
 		4C27B2712D8D644A00AD7753 /* flutter_iosUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flutter_iosUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C27B27F2D8D661100AD7753 /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "Flutter/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
+		4C27B2802D8D661100AD7753 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "Flutter/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
+		4C69763B2D8D73E000498450 /* Info-Debug.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-Debug.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCBD2DC2D8D67760072B072 /* Flutter.xcframework in Frameworks */,
+				4CCBD2D92D8D67740072B072 /* App.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +103,7 @@
 				4C27B2642D8D644A00AD7753 /* flutter-iosTests */,
 				4C27B26E2D8D644A00AD7753 /* flutter-iosUITests */,
 				4C27B2522D8D644800AD7753 /* Products */,
+				4C27B27E2D8D661000AD7753 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +120,8 @@
 		4C27B2532D8D644800AD7753 /* flutter-ios */ = {
 			isa = PBXGroup;
 			children = (
+				4C69763B2D8D73E000498450 /* Info-Debug.plist */,
+				4C09AB042D8D75DA008B73E3 /* Info-Release.plist */,
 				4C27B2542D8D644800AD7753 /* flutter_iosApp.swift */,
 				4C27B2562D8D644800AD7753 /* ContentView.swift */,
 				4C27B2582D8D644A00AD7753 /* Assets.xcassets */,
@@ -127,6 +155,15 @@
 			path = "flutter-iosUITests";
 			sourceTree = "<group>";
 		};
+		4C27B27E2D8D661000AD7753 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C27B2802D8D661100AD7753 /* App.xcframework */,
+				4C27B27F2D8D661100AD7753 /* Flutter.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +174,7 @@
 				4C27B24D2D8D644800AD7753 /* Sources */,
 				4C27B24E2D8D644800AD7753 /* Frameworks */,
 				4C27B24F2D8D644800AD7753 /* Resources */,
+				4CCBD2DB2D8D67740072B072 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -424,7 +462,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"flutter-ios/Preview Content\"";
 				DEVELOPMENT_TEAM = 6HGX7JW529;
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Flutter/$(CONFIGURATION)",
+					"$(inherited)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "flutter-ios/Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -453,7 +497,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"flutter-ios/Preview Content\"";
 				DEVELOPMENT_TEAM = 6HGX7JW529;
 				ENABLE_PREVIEWS = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Flutter/$(CONFIGURATION)",
+					"$(inherited)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "flutter-ios/Info-$(CONFIGURATION).plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

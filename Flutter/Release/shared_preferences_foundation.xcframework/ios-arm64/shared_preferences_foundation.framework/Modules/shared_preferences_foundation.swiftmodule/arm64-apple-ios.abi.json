@@ -1,0 +1,916 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "shared_preferences_foundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "shared_preferences_foundation"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "shared_preferences_foundation",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Flutter",
+        "printedName": "Flutter",
+        "declKind": "Import",
+        "moduleName": "shared_preferences_foundation"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LegacySharedPreferencesPlugin",
+        "printedName": "LegacySharedPreferencesPlugin",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@shared_preferences_foundation@objc(cs)LegacySharedPreferencesPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s29shared_preferences_foundation29LegacySharedPreferencesPluginC8register4withySo07FlutterG9Registrar_p_tFZ",
+            "moduleName": "shared_preferences_foundation",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "LegacySharedPreferencesPlugin",
+                "printedName": "shared_preferences_foundation.LegacySharedPreferencesPlugin",
+                "usr": "c:@M@shared_preferences_foundation@objc(cs)LegacySharedPreferencesPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@shared_preferences_foundation@objc(cs)LegacySharedPreferencesPlugin(im)init",
+            "mangledName": "$s29shared_preferences_foundation29LegacySharedPreferencesPluginCACycfc",
+            "moduleName": "shared_preferences_foundation",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@shared_preferences_foundation@objc(cs)LegacySharedPreferencesPlugin",
+        "mangledName": "$s29shared_preferences_foundation29LegacySharedPreferencesPluginC",
+        "moduleName": "shared_preferences_foundation",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SharedPreferencesPlugin",
+        "printedName": "SharedPreferencesPlugin",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "register",
+            "printedName": "register(with:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "FlutterPluginRegistrar",
+                "printedName": "Flutter.FlutterPluginRegistrar",
+                "usr": "c:objc(pl)FlutterPluginRegistrar"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@shared_preferences_foundation@objc(cs)SharedPreferencesPlugin(cm)registerWithRegistrar:",
+            "mangledName": "$s29shared_preferences_foundation23SharedPreferencesPluginC8register4withySo07FlutterF9Registrar_p_tFZ",
+            "moduleName": "shared_preferences_foundation",
+            "static": true,
+            "objc_name": "registerWithRegistrar:",
+            "declAttributes": [
+              "Final",
+              "ObjC",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "SharedPreferencesPlugin",
+                "printedName": "shared_preferences_foundation.SharedPreferencesPlugin",
+                "usr": "c:@M@shared_preferences_foundation@objc(cs)SharedPreferencesPlugin"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@shared_preferences_foundation@objc(cs)SharedPreferencesPlugin(im)init",
+            "mangledName": "$s29shared_preferences_foundation23SharedPreferencesPluginCACycfc",
+            "moduleName": "shared_preferences_foundation",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@shared_preferences_foundation@objc(cs)SharedPreferencesPlugin",
+        "mangledName": "$s29shared_preferences_foundation23SharedPreferencesPluginC",
+        "moduleName": "shared_preferences_foundation",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 757,
+      "length": 91,
+      "value": "\"PigeonError(code: \""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 783,
+      "length": 1,
+      "value": "\", message: \""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 807,
+      "length": 7,
+      "value": "\"<nil>\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 815,
+      "length": 1,
+      "value": "\", details: \""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 839,
+      "length": 7,
+      "value": "\"<nil>\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 847,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 1294,
+      "length": 10,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 1303,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 1310,
+      "length": 20,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 1329,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 1336,
+      "length": 40,
+      "value": "\"Stacktrace: \""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 1375,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1922,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2225,
+      "length": 3,
+      "value": "129"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2573,
+      "length": 3,
+      "value": "129"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 4057,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4119,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 4123,
+      "length": 26,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 4148,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 4152,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 4227,
+      "length": 95,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.LegacyUserDefaultsApi.remove\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 4321,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 4523,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 4826,
+      "length": 96,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.LegacyUserDefaultsApi.setBool\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 4921,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5124,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5166,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 5488,
+      "length": 98,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.LegacyUserDefaultsApi.setDouble\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 5585,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5790,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 5832,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 6159,
+      "length": 97,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.LegacyUserDefaultsApi.setValue\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 6255,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6459,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6501,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 6814,
+      "length": 95,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.LegacyUserDefaultsApi.getAll\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 6908,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7113,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7181,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 7519,
+      "length": 94,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.LegacyUserDefaultsApi.clear\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 7612,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7816,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 7884,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 9507,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9569,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 9573,
+      "length": 26,
+      "value": "\".\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 9598,
+      "length": 5,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 9602,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 9735,
+      "length": 86,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.UserDefaultsApi.set\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 9820,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10019,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10061,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10095,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 10538,
+      "length": 88,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.UserDefaultsApi.clear\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 10625,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10854,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 10888,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 11328,
+      "length": 89,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.UserDefaultsApi.getAll\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 11416,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11646,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 11680,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 12114,
+      "length": 91,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.UserDefaultsApi.getValue\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 12204,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12408,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12452,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 12903,
+      "length": 90,
+      "value": "\"dev.flutter.pigeon.shared_preferences_foundation.UserDefaultsApi.getKeys\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "StringLiteral",
+      "offset": 12992,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13223,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/messages.g.swift",
+      "kind": "IntegerLiteral",
+      "offset": 13257,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 289,
+      "length": 16,
+      "value": "\"Argument Error\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1557,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 1814,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2786,
+      "length": 8,
+      "value": "\"group.\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2799,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2897,
+      "length": 93,
+      "value": "\"The provided Suite Name '\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 2944,
+      "length": 47,
+      "value": "\"' does not follow the predefined requirements\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 3011,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 3198,
+      "length": 64,
+      "value": "\"The provided Suite Name '\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 3245,
+      "length": 18,
+      "value": "\"' does not exist\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "StringLiteral",
+      "offset": 3281,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 5122,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "Dictionary",
+      "offset": 5167,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6152,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6190,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6228,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6263,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6410,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/bayunugroho\/.pub-cache\/hosted\/pub.dev\/shared_preferences_foundation-2.5.4\/darwin\/shared_preferences_foundation\/Sources\/shared_preferences_foundation\/SharedPreferencesPlugin.swift",
+      "kind": "BooleanLiteral",
+      "offset": 6433,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}
